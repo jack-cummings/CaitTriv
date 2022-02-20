@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaitVia Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+  <div class="container my-4">
+
+    <p class="font-weight-bold">Welcome to CaitVia!</p>
+
+    <p><strong>The Daily Trivia game for Cait</strong></p>
+    <p>Check back daily for questions on books you've read, things we've done or other things you love.</p>
+
+		<hr>
+
+    <p class="font-weight-bold">Today's Question is</p>
+    <p class="font-weight-bold">{question_insert}</p>
+
+    <section class="section-preview">
+        <form method="POST" action="userInput">
+            <div class="form-group" role="group" >
+                <label for="setUser"> </label>
+                <input type="text" class="form-control" id="caitsAnswer" placeholder="Put your guess here!" name=answer>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </section>
+
+  </div>
+</html>

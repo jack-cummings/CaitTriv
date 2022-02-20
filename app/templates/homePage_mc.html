@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaitVia Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+  <div class="container my-4">
+
+    <p class="font-weight-bold">Welcome to CaitVia!</p>
+
+    <p><strong>The Daily Trivia game for Cait</strong></p>
+    <p>Check back daily for questions on books you've read, things we've done or other things you love.</p>
+
+		<hr>
+
+    <p class="font-weight-bold">Today's Question is</p>
+    <p class="font-weight-bold">{question_insert}</p>
+
+    <section class="section-preview">
+
+    <form method="POST" action="makeChoice">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="choices" id="choice1" value="value1" checked>
+      <label class="form-check-label" for="choices1">
+        {choice_1}
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="choices" id="choice2" value="value2">
+      <label class="form-check-label" for="choices2">
+        {choice_2}
+      </label>
+    </div>
+        <div class="form-check">
+      <input class="form-check-input" type="radio" name="choices" id="choice3" value="value3" checked>
+      <label class="form-check-label" for="choices3">
+        {choice_3}
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="choices" id="choice4" value="value4">
+      <label class="form-check-label" for="choices4">
+        {choice_4}
+      </label>
+    </div>
+
+    <p></p>
+    <button type="submit" class="btn btn-primary">Let's see how I did</button>
+    </form>
+    </section>
+
+  </div>
+</html>
